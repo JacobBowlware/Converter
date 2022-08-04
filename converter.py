@@ -20,18 +20,20 @@ while True:
         if input_num.isnumeric():
             match values['-CONVERSION-']:
                 case 'lbs - kg':
-                    result = float(input_num) * 2.20462
+                    result = round(float(input_num) * 2.20462, 2)
                     output_string = f"{input_num} lbs = {result} kg"
                 
                 case 'mi - km':
-                    result = float(input_num) * 0.6214
+                    result = round(float(input_num) * 0.6214, 2)
                     output_string = f"{input_num} mi = {result} km"
                 
                 case 'sec - min':
-                    result = float(input_num) / 60
+                    result = round(float(input_num) / 60, 2)
                     output_string = f"{input_num} sec = {result} min"
 
             window['-OUTPUT-'].update(output_string)
+        else:
+            window['-OUTPUT-'].update('Please Enter A Number')
 window.close()
 
 
