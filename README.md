@@ -1,2 +1,2 @@
 # Converter
-Small converter application made using PySimpleGUI
+Small converter application made using PySimpleGUI.
